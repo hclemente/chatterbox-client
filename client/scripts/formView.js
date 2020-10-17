@@ -4,15 +4,16 @@ var FormView = {
 
   initialize: function() {
     FormView.$form.on('submit', FormView.handleSubmit);
-    $('submit').on('click', FormView.handleSubmit);
+
   },
 
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
     event.preventDefault();
-    var newMessage = Parse.create(message);
+    Parse.create(message, function () {
+      console.log('success');
+    });
 
-    $('form').append(newMessage);
     console.log('click!');
   },
 

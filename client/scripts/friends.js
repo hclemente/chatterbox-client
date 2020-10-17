@@ -1,7 +1,5 @@
 var Friends = {
 
-  // $friends: $('#friends'),
-
   friends: {},
 
   $username: $('.username'),
@@ -9,15 +7,8 @@ var Friends = {
   initialize: function() {
   },
 
-  // toggle: $($username).click(function() {
-  //   toggleStatus();
-  // }),
-
   toggleStatus: function (username) {
-    //this.addEventListener('click', function (event) {}
+
     this.friends[username] = username;
   },
-
-
-
 };

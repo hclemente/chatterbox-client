@@ -3,12 +3,6 @@ var Parse = {
   server: `http://parse.${window.CAMPUS}.hackreactor.com/chatterbox/classes/messages`,
 
 
-  /**
-   *  @param message
-   *  @param successCB
-   *  @param errorCB
-   */
-
   create: function(message, successCB, errorCB = null) {
     // todo: save a message to the server
     $.ajax({
