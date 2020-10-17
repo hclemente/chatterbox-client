@@ -2,17 +2,21 @@ var Friends = {
 
   // $friends: $('#friends'),
 
-  friends: {},
+  storage: {},
+
+  $username: $('.username'),
+
+  initialize: function() {
+  },
+
+  // toggle: $($username).click(function() {
+  //   toggleStatus();
+  // }),
+
+  toggleStatus: function () {
+    //this.addEventListener('click', function (event) {}
+  },
 
 
 
-
-$(".username").click(function(){
-  toggleStatus();
-});
-
-  toggleStatus: function(event) {
-    //$('#friends').append('.username');
-    friends[event] = event;
-  }
 };
