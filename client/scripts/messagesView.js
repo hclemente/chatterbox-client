@@ -3,7 +3,8 @@ var MessagesView = {
   $chats: $('#chats'),
 
   initialize: function() {
-    $('#chats').on('click', handleClick);
+    $('#chats').on('click', MessagesView.handleClick);
+    // $('.button').on('click', MessagesView.addRoom);
   },
 
   renderMessage: function(message) {
@@ -19,13 +20,16 @@ var MessagesView = {
   },
 
   handleClick: function (event) {
-
+    var username = event.currentTarget.innerText;
     // event.target
-    console.log(event.target);
-    Friends.toggleStatus();
+    // console.log(event.target);
+    Friends.toggleStatus(username);
+  },
 
-  }
+  // addRoom: function (event) {
+  //   var room = event.currentTarget.innerText;
 
+  // }
 
 
 };

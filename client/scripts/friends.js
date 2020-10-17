@@ -2,7 +2,7 @@ var Friends = {
 
   // $friends: $('#friends'),
 
-  storage: {},
+  friends: {},
 
   $username: $('.username'),
 
@@ -13,8 +13,9 @@ var Friends = {
   //   toggleStatus();
   // }),
 
-  toggleStatus: function () {
+  toggleStatus: function (username) {
     //this.addEventListener('click', function (event) {}
+    this.friends[username] = username;
   },
 
 
